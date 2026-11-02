@@ -85,6 +85,10 @@ The server responded with SYN-ACK packets for open ports and RST-ACK packets for
 
 I learned how TCP flags reveal port states and how repeated connection attempts across multiple destination ports can indicate network reconnaissance.
 
+### Investigation Evidence
+
+![TCP flag analysis showing port scanning](Lab-3-TCP-Flag-Filtering.png)
+
 ---
 
 ## Lab 4: Investigating Plaintext TCP Conversations
@@ -124,6 +128,12 @@ The conversation exposed information exchanged between staff members, demonstrat
 ### What I Learned
 
 I learned how to identify unusual application traffic and use Follow TCP Stream to reconstruct conversations from captured packets.
+
+### Investigation Evidence
+
+![Office chat reconstructed using Follow TCP Stream](Lab-4-Follow-TCP-Stream.png)
+
+![Additional TCP packet analysis](Lab-4-TCP-Flag-Filtering.png)
 
 ---
 
@@ -166,6 +176,10 @@ Although hidden from the visible page, the information remained accessible in th
 
 I learned that information hidden from the browser's visual display is not necessarily protected from users or network analysts.
 
+### Investigation Evidence
+
+![Hidden HTML information in Follow TCP Stream](Lab-5-Follow-TCP-Stream.png)
+
 ---
 
 ## Lab 6: Investigating Plaintext HTTP Credentials
@@ -206,6 +220,10 @@ The authentication request contained readable form fields, demonstrating the ris
 ### What I Learned
 
 I learned how HTTP POST requests carry form data and why HTTPS is essential for protecting credentials during transmission.
+
+### Investigation Evidence
+
+![HTTP login investigation evidence](Lab-6-Submission-Form.png)
 
 ---
 
@@ -250,6 +268,10 @@ The capture showed repeated unsuccessful authentication attempts followed by a s
 
 I learned how FTP authentication commands and response codes can reveal brute-force activity and successful account compromise.
 
+### Investigation Evidence
+
+![Repeated FTP authentication attempts](Lab-7-failed-logins-Brute.png)
+
 ---
 
 ## Lab 8: Investigating VoIP Communications
@@ -292,6 +314,10 @@ SIP signalling revealed information about the call participants, while the RTP t
 ### What I Learned
 
 I learned the difference between SIP signalling and RTP media transport, as well as how unencrypted VoIP communications can expose sensitive conversations.
+
+### Investigation Evidence
+
+![RTP voice traffic analysis](Lab-8-RTP-Call-Listening.png)
 
 ---
 
